@@ -1,55 +1,37 @@
-body {
-  html, body {
-  width: 100%;
-  overflow-x: hidden;
+* {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background-color: #ffffff;
-  color: #222;
+  box-sizing: border-box;
 }
 
-/* Center container */
-.container {
-  min-height: 100svh;
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100dvh;
+  font-family: Arial, sans-serif;
 }
 
-/* Content box */
-.content {
-  text-align: center;
+.container {
+  width: 100%;
+  max-width: 1100px;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Heading */
-h1 {
-  font-size: 28px;
-  margin-bottom: 6px;
-}
-
-/* Subtitle */
-p {
-  font-size: 15px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* WhatsApp button */
-.whatsapp-btn {
-  display: inline-block;
-  background-color: #25D366;
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 30px;
-  text-decoration: none;
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  background: #25D366;
+  color: white;
   font-size: 14px;
-  font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.whatsapp-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.35);
 }
